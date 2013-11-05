@@ -1,16 +1,16 @@
 //
-//  FileWriter.m
+//  CDVPluginTwitter.m
 //  CustomPlugin
 //
 //  Created by Philip Lidstone on 04/11/2013.
 //
 //
 
-#import "FileWriter.h"
+#import "CDVPluginTwitter.h"
 
 #define TWITTER_URL @"http://api.twitter.com/1.1/"
 
-@implementation FileWriter
+@implementation CDVPluginTwitter
 
 - (void) isTwitterAvailable:(CDVInvokedUrlCommand*)command {
     TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];

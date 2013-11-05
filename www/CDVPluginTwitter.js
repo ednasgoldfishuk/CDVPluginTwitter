@@ -137,7 +137,7 @@ PluginTwitter.prototype.composeTweet = function(successCallback, errorCallback, 
     
     options = options || {};
     options.text = tweetText;
-    cordova.exec(success, failure, "TwitterPlugin", "composeTweet", [options]);
+    cordova.exec(successCallback, errorCallback, 'CDVPluginTwitter', 'composeTweet', [options]);
 };
 
 //module.exports = new PluginTwitter();

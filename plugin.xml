@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.phonegap.plugins.PluginTwitter"
+    id="com.phonegap.plugins.CDVPluginTwitter"
     version="1.0.0">
 
 <name>PluginTwitter</name>
@@ -11,8 +11,8 @@
     <engine name="cordova" version=">=3.0.0" />
 </engines>    
 
-<asset src="www/PluginTwitter.js" target="PluginTwitter.js" />
-<asset src="www/PluginTwitter" target="PluginTwitter" />
+<asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />
+<asset src="www/CDVPluginTwitter" target="CDVPluginTwitter" />
 
 <platform name="ios">
 
@@ -22,13 +22,13 @@
     </js-module> -->
 
     <config-file target="config.xml" parent="/*">
-        <feature name="PluginTwitter">
-            <param name="ios-package" value="PluginTwitter" />
+        <feature name="CDVPluginTwitter">
+            <param name="ios-package" value="CDVPluginTwitter" />
         </feature>
     </config-file>    
 
-    <header-file src="src/ios/PluginTwitter.h" />
+    <header-file src="src/ios/CDVPluginTwitter.h" />
 
-    <source-file src="src/ios/PluginTwitter.m" />
+    <source-file src="src/ios/CDVPluginTwitter.m" />
     
 </platform>
