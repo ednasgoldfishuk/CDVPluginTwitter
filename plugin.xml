@@ -7,7 +7,12 @@
 <description>Does a twitter.</description>
 <license>MIT</license>
 
+<engines>
+    <engine name="cordova" version=">=3.0.0" />
+</engines>    
+
 <asset src="www/PluginTwitter.js" target="PluginTwitter.js" />
+<asset src="www/PluginTwitter" target="PluginTwitter" />
 
 <platform name="ios">
 
@@ -15,6 +20,12 @@
     <!--<js-module src="www/cdvplugintwitter.js" name="CDVPluginTwitter">
         <clobbers target="cordova.plugins.twitter" />
     </js-module> -->
+
+    <config-file target="config.xml" parent="/*">
+        <feature name="PluginTwitter">
+            <param name="ios-package" value="PluginTwitter" />
+        </feature>
+    </config-file>    
 
     <header-file src="src/ios/PluginTwitter.h" />
 
