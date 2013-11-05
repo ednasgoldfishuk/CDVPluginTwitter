@@ -18,7 +18,7 @@
     <clobbers target="cordova.plugins.twitter" />
 </js-module>
 
-<platform name="ios">
+<!--<platform name="ios">
 
     <config-file target="config.xml" parent="/*">
         <feature name="CDVPluginTwitter">
@@ -33,4 +33,4 @@
     <framework src="Accounts.framework" />
     <framework src="Twitter.framework" />    
     
-</platform>
+</platform>-->
