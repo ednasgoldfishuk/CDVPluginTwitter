@@ -7,7 +7,7 @@
 <description>Does a twitter.</description>
 <license>MIT</license>
 
-<engines>
+<!--<engines>
     <engine name="cordova" version=">=3.0.0" />
 </engines>    
 
@@ -18,7 +18,7 @@
     <!--<asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />-->
     <!--<js-module src="www/cdvplugintwitter.js" name="CDVPluginTwitter">
         <clobbers target="cordova.plugins.twitter" />
-    </js-module> -->
+    </js-module> 
 
     <config-file target="config.xml" parent="/*">
         <feature name="CDVPluginTwitter">
@@ -30,4 +30,4 @@
 
     <source-file src="src/ios/CDVPluginTwitter.m" />
     
-</platform>
+</platform>-->
