@@ -14,7 +14,7 @@
 <keywords>twitter,phonegap 3, cli, tweet</keywords>
 <license>MIT</license>
 
-<!--<js-module src="www/CDVPluginTwitter.js" name="Twitter">
+<js-module src="www/CDVPluginTwitter.js" name="Twitter">
     <clobbers target="cordova.plugins.twitter" />
 </js-module>
 
@@ -33,4 +33,4 @@
     <framework src="Accounts.framework" />
     <framework src="Twitter.framework" />    
     
-</platform>-->
+</platform>
