@@ -3,17 +3,15 @@
     id="com.phonegap.plugins.cdvplugintwitter"
     version="1.0.0">
 
+<name>CDVPluginTwitter</name>
+<description>Does a twitter.</description>
+<license>MIT</license>
+
 <engines>
     <engine name="cordova" version=">=3.0.0" />
 </engines>    
 
-<name>CDVPluginTwitter</name>
-<description>Based on the original twitter plugin on the plugin repo, adapted to work with PhoneGap 3.0</description>
-<author>plidstone@gmail.com </author>
-<keywords>twitter,phonegap 3, cli, tweet</keywords>
-<license>MIT</license>
-
-<js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
+<js-module src="www/cdvplugintwitter.js" name="CDVPluginTwitter">
     <clobbers target="cordova.plugins.twitter" />
 </js-module>
 
@@ -28,8 +26,5 @@
     <header-file src="src/ios/CDVPluginTwitter.h" />
 
     <source-file src="src/ios/CDVPluginTwitter.m" />
-
-    <framework src="Accounts.framework" />
-    <framework src="Twitter.framework" />    
     
 </platform>
