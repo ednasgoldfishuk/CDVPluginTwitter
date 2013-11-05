@@ -11,11 +11,14 @@
     <engine name="cordova" version=">=3.0.0" />
 </engines>    
 
-<js-module src="www/cdvplugintwitter.js" name="CDVPluginTwitter">
-    <clobbers target="cordova.plugins.twitter" />
-</js-module>
+<asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />
 
 <platform name="ios">
+
+    <!--<asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />-->
+    <!--<js-module src="www/cdvplugintwitter.js" name="CDVPluginTwitter">
+        <clobbers target="cordova.plugins.twitter" />
+    </js-module> -->
 
     <config-file target="config.xml" parent="/*">
         <feature name="CDVPluginTwitter">

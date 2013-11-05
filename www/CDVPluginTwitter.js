@@ -1,4 +1,4 @@
-//cordova.define("org.apache.cordova.file.File", function(require, exports, module) {
+cordova.define("org.apache.cordova.file.File", function(require, exports, module) {
 /**
  * cordova is available under *either* the terms of the modified BSD license *or* the
  * MIT License (2008). See http://opensource.org/licenses/alphabetical for full text.
@@ -7,7 +7,7 @@
  * Copyright (c) 2011, IBM Corporation
  */
                
-//var exec = require('cordova/exec');
+var exec = require('cordova/exec');
 
 /**
  * Constructor.
@@ -150,5 +150,5 @@ PluginTwitter.prototype.composeTweet = function(successCallback, errorCallback, 
     cordova.exec(success, failure, "TwitterPlugin", "composeTweet", [options]);
 };
 
-//module.exports = new PluginTwitter();
-//});
+module.exports = new PluginTwitter();
+});
