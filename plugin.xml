@@ -13,7 +13,7 @@
 <author>plidstone@gmail.com</author>
 <keywords>twitter,ios,cordova</keywords>
 
-<js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
+<js-module src="www/PluginTwitter.js" name="PluginTwitter">
     <clobbers target="window.PluginTwitter" />
 </js-module>    
 

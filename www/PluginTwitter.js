@@ -2,7 +2,6 @@
 /**
  * Constructor.
  *
- * @returns {BarcodeScanner}
  */
 function PluginTwitter() {
     
