@@ -8,22 +8,25 @@
     <engine name="cordova" version=">=3.0.0" />
 </engines>    
 
-<name>PluginTwitter</name>
-
+<name>CDVPluginTwitter</name>
 <description>A quick adaption of the previous Twitter plugin to work with Cordova 3.0.0+</description>
-
 <author>plidstone@gmail.com</author>
-
 <keywords>twitter,ios,cordova</keywords>
+
+<js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
+    <clobbers target="window.plugintwitter" />
+</js-module>    
 
 <platform name="ios">
 
-    <js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
-        <clobbers target="window.plugintwitter" />
-    </js-module>    
+    <config-file target="config.xml" parent="/*">
+        <feature name="PluginTwitter">
+            <param name="ios-package" value="CDVPluginTwitter" />
+        </feature>
+    </config-file>    
 
-    <source-file src="src/ios/CDVPluginTwitter.m" />
     <header-file src="src/ios/CDVPluginTwitter.h" />
+    <source-file src="src/ios/CDVPluginTwitter.m" /> 
 
     <framework src="Accounts.framework" weak="true" />
     <framework src="Twitter.framework" weak="true" />
