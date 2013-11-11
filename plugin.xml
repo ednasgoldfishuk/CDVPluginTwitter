@@ -16,13 +16,11 @@
 
 <keywords>twitter,ios,cordova</keywords>
 
-<asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />
-
-<js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
-    <clobbers target="window.plugintwitter" />
-</js-module>
-
 <platform name="ios">
+
+    <js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
+        <clobbers target="window.plugintwitter" />
+    </js-module>    
 
     <source-file src="src/ios/CDVPluginTwitter.m" />
     <header-file src="src/ios/CDVPluginTwitter.h" />
