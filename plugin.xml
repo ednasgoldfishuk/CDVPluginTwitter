@@ -20,7 +20,7 @@
 <platform name="ios">
 
     <config-file target="config.xml" parent="/*">
-        <feature name="PluginTwitter">
+        <feature name="CDVPluginTwitter">
             <param name="ios-package" value="CDVPluginTwitter" />
         </feature>
     </config-file>    
