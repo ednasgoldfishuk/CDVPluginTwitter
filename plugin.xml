@@ -14,7 +14,7 @@
 <keywords>twitter,ios,cordova</keywords>
 
 <js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
-    <clobbers target="window.plugintwitter" />
+    <clobbers target="window.PluginTwitter" />
 </js-module>    
 
 <platform name="ios">
