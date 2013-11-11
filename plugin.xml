@@ -4,32 +4,28 @@
     id="com.phonegap.plugins.CDVPluginTwitter"
     version="1.0.0">
 
-<name>PluginTwitter</name>
-<description>Does a twitter.</description>
-<license>MIT</license>
-
 <engines>
     <engine name="cordova" version=">=3.0.0" />
 </engines>    
 
+<name>PluginTwitter</name>
+
+<description>A quick adaption of the previous Twitter plugin to work with Cordova 3.0.0+</description>
+
+<author>plidstone@gmail.com</author>
+
+<keywords>twitter,ios,cordova</keywords>
+
 <asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />
-<asset src="www/CDVPluginTwitter" target="CDVPluginTwitter" />
+
+<js-module src="www/CDVPluginTwitter.js" name="CDVPluginTwitter">
+    <clobbers target="window.plugintwitter" />
+</js-module>
 
 <platform name="ios">
 
-    <!--<asset src="www/CDVPluginTwitter.js" target="CDVPluginTwitter.js" />-->
-    <!--<js-module src="www/cdvplugintwitter.js" name="CDVPluginTwitter">
-        <clobbers target="cordova.plugins.twitter" />
-    </js-module> -->
-
-    <config-file target="config.xml" parent="/*">
-        <feature name="CDVPluginTwitter">
-            <param name="ios-package" value="CDVPluginTwitter" />
-        </feature>
-    </config-file>    
-
-    <header-file src="src/ios/CDVPluginTwitter.h" />
     <source-file src="src/ios/CDVPluginTwitter.m" />
+    <header-file src="src/ios/CDVPluginTwitter.h" />
 
     <framework src="Accounts.framework" weak="true" />
     <framework src="Twitter.framework" weak="true" />
