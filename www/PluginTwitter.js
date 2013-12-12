@@ -133,8 +133,16 @@ PluginTwitter.prototype.composeTweet = function(successCallback, errorCallback, 
         console.log("isTwitterSetup failure: success callback parameter must be a function");
         return;
     }
-    
+
     options = options || {};
+
+    //check if a url is used, if so replace any spaces with hyphens
+    if (typeof options.urlAttach != 'undefined')
+    {
+        var validUrl = options.urlAttach.split(' ').join('-')
+        options.urlAttach = validUrl
+    }
+
     options.text = tweetText;
     cordova.exec(successCallback, errorCallback, 'CDVPluginTwitter', 'composeTweet', [options]);
 };
