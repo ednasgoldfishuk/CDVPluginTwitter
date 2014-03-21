@@ -15,10 +15,6 @@
 - (void) isTwitterAvailable:(CDVInvokedUrlCommand*)command {
     TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
     BOOL *twitterSDKAvailable = tweetViewController != nil;
-    
-    if(tweetViewController != nil){
-        [tweetViewController release];
-    }
 
     NSMutableDictionary* twitterData = [NSMutableDictionary dictionaryWithCapacity:1];
     [twitterData setObject:[NSNumber numberWithBool:twitterSDKAvailable] forKey:@"isAvailable"];
